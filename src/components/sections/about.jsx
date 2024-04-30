@@ -24,6 +24,7 @@ const About = () => {
               alt="Coffee Farmer"
               className="w-full lg:max-w-md object-cover rounded-lg shadow-lg lg:ml-auto lg:mt-8"
               style={{ maxHeight: '100%' }}
+              loading="lazy"
             />
           </div>
         </div>
