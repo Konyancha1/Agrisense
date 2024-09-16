@@ -163,7 +163,7 @@ const Home: React.FC = () => {
               Increase yields, protect crops, access global markets.
             </h1>
           </div>
-          <div className="grid grid-cols-2 gap-4 w-full lg:w-1/2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full lg:w-1/2">
             <div className="flex flex-row items-center justify-center space-x-2 w-full h-[7rem] p-4 bg-green-700 rounded-lg">
               <img src={Operations} className="h-10" alt="Operations" />
               <p className="text-white text-base">Improve your supply operations.</p>
