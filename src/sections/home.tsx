@@ -63,7 +63,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section id="about" className="bg-green-600 px-12 lg:px-56 py-10">
+      <section id="about" className="bg-green-600 px-12 lg:px-56 py-16">
         <p className="text-lg font-bold text-left text-yellow-400">About Us</p>
         <h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white mt-2'>Who We Are</h1>
         <div className='flex flex-col md:flex-row mt-16 space-y-6 md:space-y-0 md:space-x-12 justify-center items-center'>
@@ -105,7 +105,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section id="product" className="h-auto flex flex-col items-center justify-start px-6 sm:px-12 md:px-16 lg:px-28 bg-gray-200 py-10">
+      <section id="product" className="h-auto flex flex-col items-center justify-start px-6 sm:px-12 md:px-16 lg:px-28 bg-gray-200 py-16">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-700 text-center">Our Products</h1>
         <p className="text-lg font-bold text-yellow-700 mt-2 text-center">Our Value, Your Success</p>
         
@@ -160,7 +160,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="h-auto flex flex-col items-center justify-start px-6 sm:px-12 md:px-16 lg:px-28 bg-green-600 py-10">
+      <section className="h-auto flex flex-col items-center justify-start px-6 sm:px-12 md:px-16 lg:px-28 bg-green-600 py-16">
         <div className="w-full flex flex-col lg:flex-row lg:space-x-8 items-start lg:items-center">
           <div className="flex flex-col mb-8 lg:mb-0 w-full lg:w-1/2 px-4 sm:px-8 lg:px-12">
             <p className="text-lg font-bold text-yellow-400 text-center md:text-left">Our Advantage</p>
@@ -221,7 +221,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="h-auto flex flex-col items-center justify-center bg-custom-brown px-6 sm:px-12 md:px-16 lg:px-28 py-10">
+      <section className="h-auto flex flex-col items-center justify-center bg-custom-brown px-6 sm:px-12 md:px-16 lg:px-28 py-16">
         <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center text-yellow-400">Meet The Team</h1>
         <p className="text-center text-lg mt-6 text-white w-full sm:w-[80%]">
           To help monitor and reduce chemical inputs per hectare. To guide for increasing yield and efficiency. 
@@ -266,6 +266,33 @@ const Home: React.FC = () => {
             <h2 className="text-lg font-bold text-white">Tammy Kaunda</h2>
             <p className="text-yellow-400">Brand Marketer</p>
           </div>
+        </div>
+      </section>
+
+      <section id='#contact' className="h-auto flex flex-col items-center justify-center bg-gray-200 px-6 sm:px-12 md:px-16 lg:px-28 py-10">     
+        <div className="w-full lg:w-[55%] bg-gray-100 p-8 rounded-lg shadow-lg">
+          <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-left text-black mb-2">Let's Talk</h1>
+          <p className='text-lg text-black mb-6'>To contact us, fill out the form below and we’ll get back to you within 24 hours.</p>
+          <form className="flex flex-col space-y-6 mb-8">
+            <div className="flex flex-col">
+              <label className="text-lg font-semibold text-gray-700 mb-2">Your Name</label>
+              <input type="text" id="name" className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Enter your name" required />
+            </div>
+
+            <div className="flex flex-col">
+              <label className="text-lg font-semibold text-gray-700 mb-2" >Your Email</label>
+              <input type="email" id="email" className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Enter your email" required />
+            </div>
+
+            <div className="col-span-2 flex flex-col">
+              <label className="text-lg font-semibold text-gray-700 mb-2">Message</label>
+              <textarea id="message" className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <div className="col-span-2 flex justify-center">
+              <button type="submit" className="w-[30%] bg-green-500 text-white font-bold py-3 rounded-md hover:bg-green-700 transition">Submit</button>
+            </div>
+          </form>
         </div>
       </section>
 
