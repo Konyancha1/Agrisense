@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from './button';
 import Logo from '../assets/images/logo.png';  
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -17,13 +34,33 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="hidden md:flex justify-between items-center w-[85%] p-6 bg-white bg-opacity-50 rounded-lg shadow-md absolute top-2 left-0 right-0 mx-auto z-50">
-        <img className='w-36' src={Logo} />
+      <nav
+        className={`${
+          isScrolled ? 'w-full bg-white shadow-lg rounded-none top-0' : 'w-[85%] bg-white bg-opacity-30 top-2'
+        } hidden md:flex justify-between items-center p-4 rounded-[2rem] fixed left-0 right-0 mx-auto z-50 transition-all duration-300 ease-in-out`}
+      >
+        <img className="w-32" src={Logo} />
         <ul className="flex space-x-12">
-          <li><a href="#home" className="text-green-700 hover:text-green-800 text-lg">Home</a></li>
-          <li><a href="#about" className="text-green-700 hover:text-green-800 text-lg">About Us</a></li>
-          <li><a href="#products" className="text-green-700 hover:text-green-800 text-lg">Our Products</a></li>
-          <li><a href="#contact" className="text-green-700 hover:text-green-800 text-lg">Contact Us</a></li>        
+          <li>
+            <a href="#home" className="text-green-700 hover:text-green-800 text-lg">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="text-green-700 hover:text-green-800 text-lg">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#products" className="text-green-700 hover:text-green-800 text-lg">
+              Our Products
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="text-green-700 hover:text-green-800 text-lg">
+              Contact Us
+            </a>
+          </li>
         </ul>
         <div className="flex space-x-4">
           <Button
