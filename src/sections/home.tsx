@@ -37,13 +37,13 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative z-10 text-left">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 text-green-500">
-            Empower Farmers
+            Empower <span className='text-white'>Farmers</span>
           </h1>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 text-green-500">
-            Increasing Productivity
+            Increasing <span className='text-white'>Productivity</span>
           </h1>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-green-500">
-            Promoting Sustainability
+            Promoting <span className='text-white'>Sustainability</span>
           </h1>
           <p className="text-white text-lg sm:text-xl mt-6 md:mt-10 w-full md:w-[40rem]">
             Revolutionizing farming with advanced technologies to ensure resilient and inclusive African food systems.
