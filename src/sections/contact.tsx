@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
           </form>
         </div>
         
-       <div
+        <div
           className="h-auto flex flex-col sm:flex-row items-center sm:space-x-10 space-y-6 sm:space-y-0 w-full sm:w-[80%] bg-cover bg-center p-6 sm:p-12 mt-8 rounded-3xl"
           style={{ backgroundImage: `url(${NewsletterBackground})` }}
         >
@@ -35,19 +35,19 @@ const Contact: React.FC = () => {
             <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-white">Subscribe to Our Newsletter</h1>
             <p className="text-lg text-white">Receive valuable insights and updates directly in your inbox</p>
           </div>
-        
-          <form className="flex flex-col sm:flex-row w-full sm:w-[45%]">
-            <div className="flex flex-grow">
+          
+          <form className="flex flex-col sm:flex-row">
+            <div>
               <input
                 type="email"
-                className="p-3 border border-gray-300 rounded-3xl sm:rounded-l-3xl focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full"
+                className="p-3 border border-gray-300 sm:rounded-l-3xl focus:outline-none focus:ring-2 focus:ring-yellow-400 w-[20rem]"
                 placeholder="Enter your email"
                 required
               />
             </div>
             <button
               type="submit"
-              className="bg-green-800 text-white hover:bg-green-800 font-bold px-6 rounded-3xl p-3 sm:rounded-r-3xl transition sm:mt-0 mt-2"
+              className="bg-green-800 text-white hover:bg-green-900 font-bold p-3 sm:rounded-r-3xl transition sm:mt-0 mt-2 w-[45%] mx-auto"
             >
               Subscribe
             </button>
