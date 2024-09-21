@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
             <div>
               <input
                 type="email"
-                className="p-3 border border-gray-300 sm:rounded-l-3xl focus:outline-none focus:ring-2 focus:ring-yellow-400 w-[20rem]"
+                className="p-3 border border-gray-300 sm:rounded-l-3xl focus:outline-none focus:ring-2 focus:ring-yellow-400 w-[15rem] sm:w-[20rem]"
                 placeholder="Enter your email"
                 required
               />
