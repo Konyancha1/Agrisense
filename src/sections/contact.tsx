@@ -40,14 +40,14 @@ const Contact: React.FC = () => {
             <div className="flex flex-grow">
               <input
                 type="email"
-                className="p-3 border border-gray-300 rounded-l-3xl focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full"
+                className="p-3 border border-gray-300 rounded-3xl sm:rounded-l-3xl focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full"
                 placeholder="Enter your email"
                 required
               />
             </div>
             <button
               type="submit"
-              className="bg-green-800 text-white hover:bg-green-800 font-bold px-6 rounded-r-3xl transition sm:mt-0 mt-2"
+              className="bg-green-800 text-white hover:bg-green-800 font-bold px-6 rounded-3xl p-3 sm:rounded-r-3xl transition sm:mt-0 mt-2"
             >
               Subscribe
             </button>
