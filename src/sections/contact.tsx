@@ -4,7 +4,6 @@ import NewsletterBackground from '../assets/images/subscribe_bg.png';
 const Contact: React.FC = () => {
   return (
     <>
-      {/* Contact Section */}
       <section id='contact' className="h-auto flex flex-col items-center justify-center bg-green-600 px-6 sm:px-12 md:px-16 lg:px-28 py-10">
         <div className="w-full lg:w-[55%] bg-gray-100 p-8 rounded-lg shadow-lg">
           <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-left text-black mb-2">Let's Talk</h1>
@@ -27,9 +26,8 @@ const Contact: React.FC = () => {
             </div>
           </form>
         </div>
-
-        {/* Newsletter Section */}
-        <div
+        
+       <div
           className="h-auto flex flex-col sm:flex-row items-center sm:space-x-10 space-y-6 sm:space-y-0 w-full sm:w-[80%] bg-cover bg-center p-6 sm:p-12 mt-8 rounded-3xl"
           style={{ backgroundImage: `url(${NewsletterBackground})` }}
         >
@@ -37,8 +35,8 @@ const Contact: React.FC = () => {
             <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-white">Subscribe to Our Newsletter</h1>
             <p className="text-lg text-white">Receive valuable insights and updates directly in your inbox</p>
           </div>
-
-          <form className="flex flex-row w-full sm:w-[45%]">
+        
+          <form className="flex flex-col sm:flex-row w-full sm:w-[45%]">
             <div className="flex flex-grow">
               <input
                 type="email"
@@ -46,13 +44,13 @@ const Contact: React.FC = () => {
                 placeholder="Enter your email"
                 required
               />
-              <button
-                type="submit"
-                className="bg-green-800 text-white hover:bg-green-800 font-bold px-6 rounded-r-3xl transition"
-              >
-                Subscribe
-              </button>
             </div>
+            <button
+              type="submit"
+              className="bg-green-800 text-white hover:bg-green-800 font-bold px-6 rounded-r-3xl transition sm:mt-0 mt-2"
+            >
+              Subscribe
+            </button>
           </form>
         </div>
       </section>
