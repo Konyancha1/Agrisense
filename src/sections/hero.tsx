@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative z-10 text-left">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 text-green-500">
-            Empower <span className='text-white'>Farmers</span>
+            Empowering <span className='text-white'>Farmers</span>
           </h1>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 text-green-500">
             Increasing <span className='text-white'>Productivity</span>
