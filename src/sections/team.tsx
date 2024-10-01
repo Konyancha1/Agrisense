@@ -11,10 +11,7 @@ const TeamSection: React.FC = () => {
     <section className="h-auto flex flex-col items-center justify-center bg-custom-brown px-6 sm:px-12 md:px-16 lg:px-28 py-16">
         <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center text-yellow-400">Meet The Team</h1>
         <p className="text-center text-lg mt-6 text-white w-full sm:w-[80%]">
-            To help monitor and reduce chemical inputs per hectare. To guide for increasing yield and efficiency. 
-            To service monitoring cover crops across the whole year. To cooperate for carbon insetting by incorporating 
-            carbon-reducing processes for its partners and clients. We support agro-industry and growers in reaching their 
-            sustainability goals globally.
+          Our inclusive team at Agrisense is driven by a shared passion for transforming agriculture through innovative technology. Bringing together experts in AI, data analytics, agronomy, and supply chain management, we empower farmers and businesses with intelligent solutions for sustainable growth. By working collaboratively, we deliver impactful, data-driven results that enhance transparency, productivity, and food security. Together, we are building a more resilient and sustainable future for agriculture. 
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 w-full lg:w-[65%]">
@@ -50,8 +47,8 @@ const TeamSection: React.FC = () => {
 
             <div className="flex flex-col items-center space-y-2 p-6">
             <img src={Team6} alt="Team Member 6" className="md:w-full w-[60%] max-h-[18rem] rounded-lg object-cover" />
-            <h2 className="text-lg font-bold text-white">Tammy Kaunda</h2>
-            <p className="text-yellow-400">Brand Marketer</p>
+            <h2 className="text-lg font-bold text-white">Tamanda Kaunda</h2>
+            <p className="text-yellow-400">Social Media Manager</p>
             </div>
         </div>
     </section>

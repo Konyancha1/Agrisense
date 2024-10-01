@@ -21,18 +21,18 @@ const Hero: React.FC = () => {
             Promoting <span className='text-white'>Sustainability</span>
           </h1>
           <p className="text-white text-lg sm:text-xl mt-6 md:mt-10 w-full md:w-[40rem]">
-            Revolutionizing farming with advanced technologies to ensure resilient and inclusive African food systems.
+            Drive Growth and Sustainability by unlocking the power of digital agriculture with us.
           </p>
           <div className="mt-6 md:mt-10 flex flex-row space-x-4 sm:justify-start justify-center">
             <Button
-              onClick={() => console.log('Create Account Clicked')}
-              backgroundColor="bg-green-600 text-white hover:bg-green-700"
-              text="Create Account"
+              onClick={() => console.log('Get Started Clicked')}
+              backgroundColor="bg-green-600 text-white hover:bg-green-800"
+              text="Get Started"
             />
             <Button
-              onClick={() => console.log('Book Demo Clicked')}
+              onClick={() => window.location.href = 'mailto:agrisense.coffee@gmail.com'}
               backgroundColor="bg-green-700 bg-opacity-30 text-white border border-white hover:bg-white hover:text-black"
-              text="Book Demo"
+              text="Request a Demo"
             />
           </div>
         </div>
