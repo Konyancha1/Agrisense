@@ -64,12 +64,16 @@ const Navbar: React.FC = () => {
         </ul>
         <div className="flex space-x-4">
           <Button
-            onClick={() => console.log('Farmer Clicked')}
+            onClick={() => {
+              window.location.href = 'https://wazi-track-farmer.vercel.app/';
+            }}
             backgroundColor="bg-yellow-400 text-white hover:bg-yellow-600"
             text="Farmer"
           />
           <Button
-            onClick={() => console.log('Company Clicked')}
+            onClick={() => {
+              window.location.href = 'https://wazi-track-company.vercel.app/';
+            }}
             backgroundColor="bg-green-600 text-white hover:bg-green-700"
             text="Company"
           />
@@ -105,16 +109,14 @@ const Navbar: React.FC = () => {
         <div className="flex flex-col space-y-2">
           <Button
             onClick={() => {
-              console.log('Farmer Clicked');
-              closeMenu();
+              window.location.href = 'https://wazi-track-farmer.vercel.app/';
             }}
             backgroundColor="bg-yellow-400 text-white hover:bg-yellow-600"
             text="Farmer"
           />
           <Button
             onClick={() => {
-              console.log('Company Clicked');
-              closeMenu();
+              window.location.href = 'https://wazi-track-company.vercel.app/';
             }}
             backgroundColor="bg-green-600 text-white hover:bg-green-700"
             text="Company"
