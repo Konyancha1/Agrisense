@@ -27,7 +27,7 @@ const Products: React.FC = () =>{
                         <img src={Device} className="w-full h-48 object-cover rounded-lg mx-auto" />
                         <p className="text-lg font-bold">Digital Traceability</p>
                         <p className="text-sm text-gray-600">
-                            Ensure you adhere to stringent international traceability and sustainability compliance requirements to avoid market disruptions and ensure continuous revenue.
+                            WaziTrack© streamlines farm operations by digitizing manual processes, boosting productivity and ensuring regulatory and sustainability compliance for continued market access. 
                         </p>
                     </div>
 
