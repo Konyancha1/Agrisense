@@ -1,7 +1,6 @@
 import React from 'react';
 import Team1 from '../assets/images/team1.png';
 import Team2 from '../assets/images/team2.png';
-import Team3 from '../assets/images/team3.png';
 import Team4 from '../assets/images/team4.png';
 import Team5 from '../assets/images/team5.png';
 import Team6 from '../assets/images/team6.png';
@@ -25,12 +24,6 @@ const TeamSection: React.FC = () => {
             <img src={Team2} alt="Team Member 2" className="md:w-full w-[60%] max-h-[18rem] rounded-lg object-cover" />
             <h2 className="text-lg font-bold text-white">Kevin Onyancha</h2>
             <p className="text-yellow-400">CTO</p>
-            </div>
-            
-            <div className="flex flex-col items-center space-y-2 p-6">
-            <img src={Team3} alt="Team Member 3" className="md:w-full w-[60%] max-h-[18rem] rounded-lg object-cover" />
-            <h2 className="text-lg font-bold text-white">Peter Maturwe</h2>
-            <p className="text-yellow-400">Full Stack Engineer</p>
             </div>
 
             <div className="flex flex-col items-center space-y-2 p-6">
