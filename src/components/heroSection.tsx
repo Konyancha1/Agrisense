@@ -28,7 +28,7 @@ const Home: React.FC<HomeProps> = ({
             for farmers, enhancing productivity and sustainability. 
             Join us in transforming agriculture through innovation.
           </p>
-          <button className="btn btn-green-500 text-white hover:bg-green-600 border-none">
+          <button className="btn text-white hover:bg-green-600 border-none">
             Explore Our Solutions
           </button>
         </div>
