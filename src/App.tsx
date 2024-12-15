@@ -1,12 +1,16 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import AppRoutes from './routes/appRoutes';
+import Home from './components/heroSection';
 import MainLayout from './layouts/mainLayout';
+import ClientsSection from './components/clientSection';
+import AboutSection from './components/aboutSection';
 
 const App = () => {
   return (
     <Router>
       <MainLayout>
-        <AppRoutes />
+        <Home />
+        <ClientsSection />
+        <AboutSection />
       </MainLayout>
     </Router>
   );

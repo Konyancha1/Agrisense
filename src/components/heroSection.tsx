@@ -9,7 +9,7 @@ const Home: React.FC<HomeProps> = ({
   backgroundImage = `url(${backgroundImg})`,
 }) => {
   return (
-    <div
+    <section
       className="hero min-h-screen"
       style={{
         backgroundImage,
@@ -33,7 +33,7 @@ const Home: React.FC<HomeProps> = ({
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

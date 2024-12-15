@@ -19,7 +19,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
 
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <div className="skeleton bg-white text-green-900">
+    <div className="bg-white text-green-900">
       {/* Header */}
       <header>
         <div className="navbar bg-white shadow-lg">
