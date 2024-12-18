@@ -73,7 +73,15 @@ const SolutionsSection: React.FC = () => {
                 <p className="text-gray-600 mt-4 text-sm sm:text-base">
                   {solution.description}
                 </p>
-                <button className="btn btn-outline btn-success mt-6">
+                <button
+                  className="btn btn-outline btn-success mt-6"
+                  onClick={() => {
+                    const element = document.getElementById('contact-us');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
                   Learn More
                 </button>
               </div>
