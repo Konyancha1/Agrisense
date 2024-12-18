@@ -46,21 +46,21 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 </svg>
               </button>
               <ul className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
-                <NavLink href="#">Home</NavLink>
+                <NavLink href="#home">Home</NavLink>
                 <li>
                   <details>
                     <summary className="hover:text-green-600 text-green-900 font-medium">Our Solutions</summary>
                     <ul className="p-2 bg-white">
-                      <NavLink href="#">WaziTrack</NavLink>
+                      <NavLink href="#our-solutions">WaziTrack</NavLink>
                     </ul>
                   </details>
                 </li>
-                <NavLink href="#">About Us</NavLink>
+                <NavLink href="#about-us">About Us</NavLink>
               </ul>
             </div>
             <a
               className="btn btn-ghost text-xl text-green-600 font-bold"
-              href="/"
+              href="#home"
               aria-label="Agrisense Home"
             >
               Agrisense
@@ -68,22 +68,22 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <NavLink href="#">Home</NavLink>
+              <NavLink href="#home">Home</NavLink>
               <li>
                 <details>
                   <summary className="hover:text-green-600 text-green-900 font-medium">Our Solutions</summary>
                   <ul className="p-2 bg-white">
-                    <NavLink href="#">WaziTrack</NavLink>
+                    <NavLink href="#our-solutions">WaziTrack</NavLink>
                   </ul>
                 </details>
               </li>
-              <NavLink href="#">About Us</NavLink>
+              <NavLink href="#about-us">About Us</NavLink>
             </ul>
           </div>
           <div className="navbar-end">
             <a
               className="btn bg-green-600 text-white hover:bg-green-700 border-none"
-              href="#"
+              href="#contact-us"
               aria-label="Request for Demo"
             >
               Request for Demo

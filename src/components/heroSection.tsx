@@ -16,6 +16,7 @@ const Home: React.FC<HomeProps> = ({
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
+      id="home"
     >
       <div className="hero-overlay bg-opacity-60 bg-green-900"></div>
       <div className="hero-content text-center">
