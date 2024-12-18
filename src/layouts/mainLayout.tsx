@@ -9,7 +9,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
   <li>
     <a
       href={href}
-      className="hover:text-green-600 text-green-900 font-medium"
+      className="hover:text-green-600 text-green-900 font-medium text-lg"
       aria-label={children?.toString()}
     >
       {children}
