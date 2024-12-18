@@ -9,7 +9,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
   <li>
     <a
       href={href}
-      className="hover:text-green-600 text-green-900 font-medium text-lg"
+      className="hover:text-green-600 text-green-900 font-medium"
       aria-label={children?.toString()}
     >
       {children}
@@ -45,7 +45,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   />
                 </svg>
               </button>
-              <ul className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
+              <ul className="menu menu-base dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
                 <NavLink href="#home">Home</NavLink>
                 <li>
                   <details>
