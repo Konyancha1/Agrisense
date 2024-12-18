@@ -70,7 +70,7 @@ const SolutionsSection: React.FC = () => {
                 <h3 className="text-3xl font-semibold text-green-700">
                   {solution.title}
                 </h3>
-                <p className="text-gray-600 mt-4 text-sm sm:text-base">
+                <p className="text-gray-600 mt-4 text-base sm:text-lg">
                   {solution.description}
                 </p>
                 <button
@@ -97,7 +97,7 @@ const SolutionsSection: React.FC = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800">
               How to Get Started with Wazitrack
             </h2>
-            <p className="text-gray-600 mt-4 text-sm sm:text-base">
+            <p className="text-gray-600 mt-4 text-base sm:text-lg">
               Follow these simple steps to begin your journey toward smarter farming.
             </p>
           </div>
@@ -106,13 +106,13 @@ const SolutionsSection: React.FC = () => {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300"
+                className="bg-white rounded-lg shadow-lg p-5 text-center hover:shadow-xl transition duration-300"
               >
                 <div className="text-4xl">{step.icon}</div>
                 <h3 className="text-xl font-semibold text-green-700 mt-4">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 mt-2 text-sm">{step.description}</p>
+                <p className="text-gray-600 mt-2 text-base">{step.description}</p>
               </div>
             ))}
           </div>

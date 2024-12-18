@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../assets/logo.png';
 
 interface NavLinkProps {
   href: string;
@@ -9,7 +10,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
   <li>
     <a
       href={href}
-      className="hover:text-green-600 text-green-900 font-medium"
+      className="hover:text-green-600 text-green-900 font-medium text-base"
       aria-label={children?.toString()}
     >
       {children}
@@ -49,7 +50,9 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <NavLink href="#home">Home</NavLink>
                 <li>
                   <details>
-                    <summary className="hover:text-green-600 text-green-900 font-medium">Our Solutions</summary>
+                    <summary className="hover:text-green-600 text-green-900 font-medium">
+                      Our Solutions
+                    </summary>
                     <ul className="p-2 bg-white">
                       <NavLink href="#our-solutions">WaziTrack</NavLink>
                     </ul>
@@ -59,11 +62,15 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               </ul>
             </div>
             <a
-              className="btn btn-ghost text-xl text-green-600 font-bold"
               href="#home"
               aria-label="Agrisense Home"
+              className="btn btn-ghost flex items-center space-x-2"
             >
-              Agrisense
+              <img
+                src={logo}
+                alt="Agrisense Logo"
+                className="h-10 w-auto"
+              />
             </a>
           </div>
           <div className="navbar-center hidden lg:flex">
@@ -71,7 +78,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <NavLink href="#home">Home</NavLink>
               <li>
                 <details>
-                  <summary className="hover:text-green-600 text-green-900 font-medium">Our Solutions</summary>
+                  <summary className="hover:text-green-600 text-green-900 font-medium text-base">Our Solutions</summary>
                   <ul className="p-2 bg-white">
                     <NavLink href="#our-solutions">WaziTrack</NavLink>
                   </ul>
