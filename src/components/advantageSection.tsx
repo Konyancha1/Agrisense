@@ -10,7 +10,7 @@ const advantages = [
     icon: <FaClipboardList className="w-8 h-8 text-green-900" />
   },
   {
-    title: "Early and Accurate Detection",
+    title: "Early and Accurate Disease Detection",
     description:
       "Leverage advanced technologies to identify potential issues early, reducing crop loss and maximizing yield.",
     icon: <FaExclamationTriangle className="w-8 h-8 text-green-900" />
