@@ -10,21 +10,21 @@ export default function Home() {
     <>
     <Navbar />
     <Hero />
-    <div className="flex flex-col justify-center gap-2 items-center">
+    <section className="flex flex-col justify-center p-4 gap-2 items-center">
       <h1 className="font-semibold font-poppins text-2xl">Trusted by</h1>
       <div className="flex gap-3">
-        <div className="w-44 h-28">
+        <div className="w-28 h-12 md:w-44 md:h-28">
         <img src="/assets/karmi-logo.png" alt="Karmi valley logo" className="w-full h-full"/>
         </div>
-        <div className="w-44 h-28">
+        <div className="w-28 h-12 md:w-44 md:h-28">
         <img src="/assets/microsoft-logo.png" alt="Karmi valley logo" className="w-full h-full"/>
         </div>
       </div>
-    </div>
+    </section>
     <section>
-      <div className="flex flex-col gap-3 p-4">
-        <h1 className="text-2xl font-semibold text-[#16A34A]">About Us</h1>
-        <p className="text-lg">
+      <div className="flex flex-col gap-3 py-4 px-8 max-w-3xl">
+        <h1 className="text-3xl font-semibold text-[#16A34A]">About Us</h1>
+        <p className="text-md font-poppins opacity-70">
         At Agrisense, we deliver cutting-edge digital solutions for traceability, compliance, and productivity 
         in agriculture. Our platform enhances transparency, streamlines operations, and optimizes resource use, 
         connecting agribusinesses to global markets. Dedicated to sustainability and efficiency, we empower you 
@@ -32,7 +32,7 @@ export default function Home() {
         </p>
       </div>
     </section>
-    <section className="w-full py-16 bg-white flex items-center justify-center">
+    <section className="w-full py-8 bg-white flex items-center justify-center">
       <div className="max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-4xl font-bold text-green-700">
@@ -58,7 +58,7 @@ export default function Home() {
           </ul>
         </div>
         <div className="flex justify-center">
-          <div className="relative w-full h-80 md:h-[400px] rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-80 h-40 md:h-80 rounded-lg overflow-hidden shadow-lg">
             <Image 
               src="/assets/image-2.png" // Add the image to the public folder
               alt="A woman inspecting crops in a greenhouse"
@@ -70,7 +70,7 @@ export default function Home() {
       </div>
     </section>
     <FeaturesSection />
-    <section className="bg-[#EEEEFF5F] py-16 px-6 md:px-12 lg:px-24">
+    <section className="bg-[#EEEEFF5F] py-10 px-6 md:px-12 lg:px-16 mx-auto">
       <div>
         {/* Left Content */}
         <div>
@@ -87,13 +87,12 @@ export default function Home() {
         {/* Right Content */}
         <div className="bg-white rounded-xl shadow-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Image */}
-          <div className="relative rounded-lg overflow-hidden">
+          <div className="relative flex justify-center w-80 h-40 md:h-80 rounded-lg overflow-hidden">
             <Image
               src="/assets/image-3.png" // Replace with your image path
               alt="Farmer working"
-              width={400}
-              height={300}
-              className="w-full h-full object-cover"
+              layout="fill"
+              objectFit="cover"
             />
           </div>
           {/* Features */}
@@ -125,7 +124,7 @@ export default function Home() {
       </div>
     </section>
     <section className="bg-white py-12 px-6 md:px-12 lg:px-24">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-5xl">
         {/* Title and Description */}
         <h2 className="text-2xl md:text-3xl font-bold text-green-600">
           ESG and Sustainability Tracking
@@ -145,17 +144,17 @@ export default function Home() {
           <Image
             src="/assets/image-4.png" // Replace with the correct image path
             alt="Sustainability Tracking"
-            width={1200}
-            height={800}
+            width={800}
+            height={600}
             className="w-full h-auto object-cover"
           />
         </div>
       </div>
     </section>
     <section className="bg-white py-12 px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 ">
         {/* Text Section */}
-        <div>
+        <div className="flex flex-col gap-16">
           <h2 className="text-2xl md:text-3xl font-bold text-green-600">
             Yield Prediction and Analysis
           </h2>
@@ -168,13 +167,11 @@ export default function Home() {
         </div>
 
         {/* Image/Chart Section */}
-        <div className="rounded-lg overflow-hidden border border-yellow-300 shadow-sm">
-          <Image
+        <div className="rounded-lg w-90 h-80 overflow-hidden border border-yellow-300 shadow-sm">
+          <img
             src="/assets/image-5.png" // Replace with your uploaded chart image path
             alt="Production Trend Chart"
-            width={600}
-            height={400}
-            className="w-full h-auto object-contain"
+            className="w-full h-full object-contain"
           />
         </div>
       </div>
@@ -182,11 +179,11 @@ export default function Home() {
     <section className="bg-white py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Left: Image */}
-        <div className="md:w-1/2">
+        <div className="w-120 h-80">
           <img
             src="/assets/image-6.png"
             alt="Farm Orders and Sales"
-            className="rounded-lg shadow-md"
+            className="w-full h-full object-cover"
           />
         </div>
 

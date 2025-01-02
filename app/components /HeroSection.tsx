@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         />
       </div>
       <div className="relative z-10 px-4">
-        <h1 className="text-5xl font-bold text-[#FFB743] leading-tight">
+        <h1 className="text-2xl lg:text-5xl font-bold text-[#FFB743] leading-tight">
           Simplify Compliance <br /> Audits with Agrisense.
         </h1>
         <p className="mt-6 text-lg text-gray-200 max-w-3xl mx-auto">
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           helps you streamline your workflow, from planting to harvest, with custom farm management software.
           Keep all your data organized in one place!
         </p>
-        <button className="mt-8 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-8 rounded-lg shadow-lg">
+        <button className="mt-8 bg-[#519E65] hover:bg-green-600 text-white font-medium py-3 px-8 rounded-lg shadow-lg">
           Request a Demo
         </button>
       </div>

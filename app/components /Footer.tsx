@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-green-50 py-12">
+    <footer className="bg-[#DCECE0] py-12 text-center">
     <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-start">
       <div className="text-center md:text-left">
-        <Image src="/assets/logo.png" alt="Agrisense Logo" width={200} height={80} />
+        <Image src="/assets/footer-logo.png" alt="Agrisense Logo" width={200} height={80} />
         <p className="mt-4 text-gray-700">
           Revolutionizing agriculture with efficiency and speed.
           Discover how we can help, contact us today!
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
         </ul>
       </div>
     </div>
-    <div className="mt-12 border-t flex justify-between pt-6 text-center text-gray-600">
+    <div className="mt-12 border-t flex flex-col lg:flex-row justify-between pt-6 text-center text-gray-600">
       <p>&copy; 2024 AgriSense Technology Limited. All rights reserved.</p>
       <div className="mt-4 flex justify-center space-x-6">
         <span>Terms & Conditions</span>
