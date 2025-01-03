@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full h-[100vh] flex items-center justify-center text-center">
+    <section id="home" className="relative w-full h-[100vh] flex items-center justify-center text-center">
       <div className="absolute inset-0">
         <Image 
           src="/assets/image-1.png" // Make sure to add the image to the public folder
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           helps you streamline your workflow, from planting to harvest, with custom farm management software.
           Keep all your data organized in one place!
         </p>
-        <button className="mt-8 bg-[#519E65] hover:bg-green-600 text-white font-medium py-3 px-8 rounded-lg shadow-lg">
+        <button className="mt-8 bg-[#519E65] hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg shadow-lg">
           Request a Demo
         </button>
       </div>

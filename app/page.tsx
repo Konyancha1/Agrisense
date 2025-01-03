@@ -3,14 +3,13 @@ import FeaturesSection from "./components /FeaturesSection";
 import Footer from "./components /Footer";
 import Hero from "./components /HeroSection";
 import Navbar from "./components /Navbar";
-import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
     <Navbar />
     <Hero />
-    <section className="flex flex-col justify-center p-4 gap-2 items-center">
+    <section className="flex flex-col justify-center p-4 gap-2 items-center py-4 font-poppins md:py-6 px-6 md:px-12 lg:px-24">
       <h1 className="font-semibold font-poppins text-2xl">Trusted by</h1>
       <div className="flex gap-3">
         <div className="w-28 h-12 md:w-44 md:h-28">
@@ -21,8 +20,8 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <section>
-      <div className="flex flex-col gap-3 py-4 px-8 max-w-3xl">
+    <section id="about-us" className="py-4 font-poppins md:py-6 px-6 md:px-12 lg:px-24">
+      <div className="flex flex-col gap-3 py-4 max-w-3xl">
         <h1 className="text-3xl font-semibold text-[#16A34A]">About Us</h1>
         <p className="text-md font-poppins opacity-70">
         At Agrisense, we deliver cutting-edge digital solutions for traceability, compliance, and productivity 
@@ -32,20 +31,22 @@ export default function Home() {
         </p>
       </div>
     </section>
-    <section className="w-full py-8 bg-white flex items-center justify-center">
-      <div className="max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 className="text-4xl font-bold text-green-700">
+    <section id="our-solution" className="w-full py-4 font-poppins md:py-6 px-6 md:px-12 lg:px-24 bg-white">
+      <div >
+          <h2 className="text-3xl md:text-3xl font-bold text-[#16A34A]">
             Become Audit-Ready, Always
           </h2>
           <p className="text-xl text-yellow-500 mt-2">
             Smarter. Simpler. Quicker
           </p>
+          </div>
+      <div className="max-w-7xl  flex flex-col md:flex-cols-2 md:flex-row gap-6 items-center flex items-center justify-center">
+        <div className="w-full md:w-[65%]">
           <p className="mt-6 text-gray-600">
             Stay prepared for audits with WaziTrack Compliance Software. Our platform ensures you meet regulatory
             standards like GLOBALGAP, Fairtrade International, USDA Organic, EUDR, EU Organic Certification, HACCP, and more.
           </p>
-          <ul className="mt-6 space-y-4 text-gray-700">
+          <ul className="mt-6 pl-8 space-y-4 text-gray-700">
             <li>
               <strong>AI-Powered Accuracy:</strong> Correct critical errors in real-time with AI-driven corrective actions.
             </li>
@@ -57,24 +58,23 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className="flex justify-center">
-          <div className="relative w-80 h-40 md:h-80 rounded-lg overflow-hidden shadow-lg">
-            <Image 
-              src="/assets/image-2.png" // Add the image to the public folder
+        <div className="flex justify-center w-full md:w-[40%]">
+          <div className="w-full h-60">
+            <img 
+              src="/assets/image-2.png"
               alt="A woman inspecting crops in a greenhouse"
-              layout="fill"
-              objectFit="cover"
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
         </div>
       </div>
     </section>
     <FeaturesSection />
-    <section className="bg-[#EEEEFF5F] py-10 px-6 md:px-12 lg:px-16 mx-auto">
+    <section className="bg-[#EEEEFF5F] py-4 font-poppins md:py-6 px-6 md:px-12 lg:px-24">
       <div>
         {/* Left Content */}
         <div>
-          <h1 className="text-2xl md:text-4xl font-bold text-green-600">
+          <h1 className="text-2xl md:text-4xl font-bold text-[#16A34A]">
             Organize your farm Operations and get more done
           </h1>
           <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
@@ -85,19 +85,18 @@ export default function Home() {
           </p>
         </div>
         {/* Right Content */}
-        <div className="bg-white rounded-xl shadow-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-white pt-6 flex flex-col md:flex-row gap-12">
           {/* Image */}
-          <div className="relative flex justify-center w-80 h-40 md:h-80 rounded-lg overflow-hidden">
-            <Image
-              src="/assets/image-3.png" // Replace with your image path
+          <div className="relative flex justify-center w-full md:w-[40%] h-60 rounded-lg overflow-hidden">
+            <img
+              src="/assets/image-3.png"
               alt="Farmer working"
-              layout="fill"
-              objectFit="cover"
+              className="w-full h-full object-cover rounded-xl object-top"
             />
           </div>
           {/* Features */}
-          <div className="flex flex-col justify-center">
-            <div className="mb-6">
+          <div className="flex flex-col justify-center w-full md:w-[60%]">
+            <div className="mb-4">
               <h3 className="text-lg font-semibold text-gray-900">Streamlined Task Management</h3>
               <p className="text-sm text-gray-700 mt-2">
                 Organize, assign, and prioritize tasks effortlessly, ensuring your team knows
@@ -105,7 +104,7 @@ export default function Home() {
                 deadlines.
               </p>
             </div>
-            <div className="mb-6">
+            <div className="mb-4">
               <h3 className="text-lg font-semibold text-gray-900">Flexible Workflows</h3>
               <p className="text-sm text-gray-700 mt-2">
                 Tailor task lists, boards, and calendars to suit your farm’s unique needs, creating
@@ -123,13 +122,13 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <section className="bg-white py-12 px-6 md:px-12 lg:px-24">
+    <section className="bg-white py-4 font-poppins md:py-6 px-6 md:px-12 lg:px-24">
       <div className="max-w-5xl">
         {/* Title and Description */}
-        <h2 className="text-2xl md:text-3xl font-bold text-green-600">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#16A34A]">
           ESG and Sustainability Tracking
         </h2>
-        <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
+        <p className="mt-2 text-gray-700 text-sm md:text-base leading-relaxed">
           Track and optimize your farm’s environmental, social, and governance (ESG) impact with
           real-time data to achieve your sustainability goals. Ensure compliance with global
           sustainability standards, reduce waste, and improve efficiency. Easily generate reports
@@ -140,22 +139,20 @@ export default function Home() {
 
       {/* Image Section */}
       <div className="mt-8 max-w-4xl mx-auto">
-        <div className="rounded-lg overflow-hidden">
-          <Image
+        <div className="w-full md:w-[80%] h-40 md:h-80 rounded-lg overflow-hidden">
+          <img
             src="/assets/image-4.png" // Replace with the correct image path
             alt="Sustainability Tracking"
-            width={800}
-            height={600}
-            className="w-full h-auto object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
     </section>
-    <section className="bg-white py-12 px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 ">
+    <section className="bg-white py-4 font-poppins md:py-6 px-6 md:px-12 lg:px-24">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 ">
         {/* Text Section */}
-        <div className="flex flex-col gap-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-green-600">
+        <div className="flex flex-col justify-center md:gap-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#16A34A]">
             Yield Prediction and Analysis
           </h2>
           <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
@@ -167,29 +164,30 @@ export default function Home() {
         </div>
 
         {/* Image/Chart Section */}
-        <div className="rounded-lg w-90 h-80 overflow-hidden border border-yellow-300 shadow-sm">
+        <div className="rounded-lg w-full md:w-90 h-80 overflow-hidden border border-yellow-300">
           <img
-            src="/assets/image-5.png" // Replace with your uploaded chart image path
+            src="/assets/image-5.png"
             alt="Production Trend Chart"
             className="w-full h-full object-contain"
           />
         </div>
       </div>
     </section>
-    <section className="bg-white py-16">
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
+    <section className="bg-white py-4 font-poppins md:py-6 px-6 md:px-12 lg:px-24">
+      <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 lg:gap-12">
         {/* Left: Image */}
-        <div className="w-120 h-80">
+        <div className=" w-full md:w-[40%] h-60 rounded-lg overflow-hidden">
           <img
             src="/assets/image-6.png"
             alt="Farm Orders and Sales"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
 
         {/* Right: Text Content */}
-        <div className="md:w-1/2 mt-8 md:mt-0 md:ml-10">
-          <h2 className="text-2xl font-bold text-green-600 mb-4">
+        <div className=" w-full md:w-[80%]">
+        <div className="flex flex-col md:gap-16">
+          <h2 className="text-2xl lg:text-3xl font-bold text-[#16A34A] mb-4">
             Farm Orders and Sales
           </h2>
           <p className="text-gray-600 leading-relaxed">
@@ -198,33 +196,34 @@ export default function Home() {
             sales insights to refine pricing, boost profitability, and enhance
             customer satisfaction for sustained growth.
           </p>
+          </div>
         </div>
       </div>
     </section>
-    <section className="w-full py-16 bg-white flex items-center justify-center">
-      <div className="max-w-5xl w-full px-6">
-        <h2 className="text-4xl font-bold text-green-700">Start Using Agrisense Now</h2>
+    <section className="w-full bg-white flex items-center justify-center py-4 font-poppins md:py-12 px-6 md:px-12 lg:px-24">
+      <div className="max-w-5xl lg:max-w-7xl w-full">
+        <h2 className="text-2xl md:text-4xl font-bold text-[#16A34A]">Start Using Agrisense Now</h2>
         <p className="mt-4 text-gray-600">
           Enhance your productivity and maximize profits with Agrisense! Our cutting-edge tools transform data into actionable insights, eliminating the guesswork in farming and driving your success.
         </p>
         <p className="mt-6 text-yellow-500 font-semibold">Talk to Our Team</p>
         <p className="text-gray-600 mb-8">To get in touch, please fill out the form below. Our team is committed to responding within 24 hours."</p>
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-x-16">
           <div>
             <label className="block text-gray-700">First Name</label>
-            <input className="w-full mt-2 p-3 border border-green-300 rounded-lg" placeholder="e.g Agrisense" />
+            <input className="w-full mt-2 p-3 border border-green-300 rounded-lg focus:outline-none" placeholder="e.g Agrisense" />
           </div>
           <div>
             <label className="block text-gray-700">Last Name</label>
-            <input className="w-full mt-2 p-3 border border-green-300 rounded-lg" placeholder="e.g Technologies" />
+            <input className="w-full mt-2 p-3 border border-green-300 rounded-lg focus:outline-none" placeholder="e.g Technologies" />
           </div>
           <div>
             <label className="block text-gray-700">Email Address</label>
-            <input className="w-full mt-2 p-3 border border-green-300 rounded-lg" placeholder="e.g agrisense.coffee@gmail.com" />
+            <input className="w-full mt-2 p-3 border border-green-300 rounded-lg focus:outline-none" placeholder="e.g agrisense.coffee@gmail.com" />
           </div>
           <div>
             <label className="block text-gray-700">Phone Number</label>
-            <input className="w-full mt-2 p-3 border border-green-300 rounded-lg" placeholder="e.g +254 769 999 066" />
+            <input className="w-full mt-2 p-3 border border-green-300 rounded-lg focus:outline-none" placeholder="e.g +254 769 999 066" />
           </div>
           <div>
             <label className="block text-gray-700">Company</label>
@@ -239,7 +238,7 @@ export default function Home() {
             <textarea className="w-full mt-2 p-3 border border-green-300 rounded-lg h-40"></textarea>
           </div>
           <div className="col-span-1 md:col-span-2 flex justify-start">
-            <button className="bg-green-600 text-white px-6 py-3 rounded-lg mt-4 hover:bg-green-700">Submit</button>
+            <button className="bg-[#519E65] text-white px-6 py-3 rounded-lg mt-4 hover:bg-green-700">Submit</button>
           </div>
         </form>
       </div>

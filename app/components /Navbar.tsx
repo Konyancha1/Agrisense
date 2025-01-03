@@ -22,13 +22,13 @@ const Navbar: React.FC = () => {
 
         {/* Navigation Links */}
         <div className="hidden lg:flex space-x-8 text-gray-800 font-semibold font-poppins">
-          <a href="#" className="hover:text-green-600">
+          <a href="#home" className="hover:text-green-600">
             Home
           </a>
-          <a href="#" className="hover:text-green-600">
+          <a href="#our-solution" className="hover:text-green-600">
             Our Solution
           </a>
-          <a href="#" className="hover:text-green-600">
+          <a href="#about-us" className="hover:text-green-600">
             About Us
           </a>
           <a href="#" className="hover:text-green-600">
@@ -55,13 +55,13 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
           <div className="lg:hidden flex p-4 items-center text-gray-800 font-semibold font-poppins">
             <div className="flex flex-col mx-auto space-y-4">
-            <a href="#" className="hover:text-green-600">
+            <a href="#home" className="hover:text-green-600">
                   Home
             </a>
-            <a href="#" className="hover:text-green-600">
+            <a href="#our-solution" className="hover:text-green-600">
                   Our Solution
             </a>
-            <a href="#" className="hover:text-green-600">
+            <a href="#about-us" className="hover:text-green-600">
               About Us
             </a>
             <a href="#" className="hover:text-green-600">
