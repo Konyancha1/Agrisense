@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           <li>Contact Us</li>
         </ul>
       </div>
-      <div className="mt-4 text-start md:mt-8 md:mt-0">
+      <div className="mt-4 text-start md:mt-0">
         <h3 className="text-lg">Get In Touch</h3>
         <ul className="mt-4 space-y-2 text-gray-700">
           <li>agrisense.coffee@gmail.com</li>

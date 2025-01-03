@@ -1,77 +1,93 @@
-'use client'
+'use client';
 import React, { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const toggleMobileMenu = () => {
-      setIsMobileMenuOpen((prev) => !prev);
-    };
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
+
   return (
-    <nav className="lg:fixed top-0 z-50 w-full bg-white shadow-md">
-      <div className="container mx-auto flex items-center justify-between px-4 py-2">
+    <nav className="fixed top-0 z-50 w-full bg-white shadow-md">
+      <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo Section */}
         <div className="flex items-center">
           <img
-            src="/assets/logo.png" // Replace with your logo path
+            src="/assets/logo.png"
             alt="Agrisense Logo"
-            className="h-12 w-auto"
+            className="h-16 w-auto"  // Increased logo size
           />
         </div>
 
-        {/* Navigation Links */}
+        {/* Navigation Links for Large Screens */}
         <div className="hidden lg:flex space-x-8 text-gray-800 font-semibold font-poppins">
-          <a href="#home" className="hover:text-green-600">
+          <a href="#home" className="hover:text-green-600 transition-colors">
             Home
           </a>
-          <a href="#our-solution" className="hover:text-green-600">
-            Our Solution
-          </a>
-          <a href="#about-us" className="hover:text-green-600">
+          <a href="#about-us" className="hover:text-green-600 transition-colors">
             About Us
           </a>
-          <a href="#" className="hover:text-green-600">
-            Blog
-          </a>
-          <a href="#" className="hover:text-green-600">
-            Careers
+          <a href="#our-solution" className="hover:text-green-600 transition-colors">
+            Our Solution
           </a>
         </div>
 
+        {/* Mobile Menu Toggle Button */}
         <button
-          className="lg:hidden flex items-center px-3 py-2 border rounded text-gray-800 border-gray-400"
+          className="lg:hidden flex items-center text-gray-800"
           onClick={toggleMobileMenu}
+          aria-label="Toggle navigation menu"
         >
-          <FaBars className='text-lg'/>
+          {isMobileMenuOpen ? (
+            <FaTimes className="text-2xl" />
+          ) : (
+            <FaBars className="text-2xl" />
+          )}
         </button>
+
         {/* Login Button */}
-        <div>
-          <button className="bg-[#519E65] text-white px-4 lg:px-10 py-1 py-2 rounded-md md:rounded-lg hover:bg-green-700">
+        <div className="hidden lg:block">
+          <button className="bg-[#519E65] text-white px-4 lg:px-8 py-2 rounded-md hover:bg-green-700 transition-all">
             Login
           </button>
         </div>
       </div>
+
+      {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-          <div className="lg:hidden flex p-4 items-center text-gray-800 font-semibold font-poppins">
-            <div className="flex flex-col mx-auto space-y-4">
-            <a href="#home" className="hover:text-green-600">
-                  Home
+        <div className="lg:hidden bg-white w-full shadow-md">
+          <div className="flex flex-col items-center space-y-6 py-6 text-gray-800 font-semibold font-poppins">
+            <a
+              href="#home"
+              className="hover:text-green-600 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
             </a>
-            <a href="#our-solution" className="hover:text-green-600">
-                  Our Solution
-            </a>
-            <a href="#about-us" className="hover:text-green-600">
+            <a
+              href="#about-us"
+              className="hover:text-green-600 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               About Us
             </a>
-            <a href="#" className="hover:text-green-600">
-              Blog
+            <a
+              href="#our-solution"
+              className="hover:text-green-600 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Our Solution
             </a>
-            <a href="#" className="hover:text-green-600">
-              Careers
-            </a>
-            </div>
-        </div>      
+            <button
+              className="bg-[#519E65] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-all"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Login
+            </button>
+          </div>
+        </div>
       )}
     </nav>
   );
