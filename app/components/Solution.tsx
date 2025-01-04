@@ -32,7 +32,7 @@ const OurSolution: React.FC = () => {
             <img
               src="/assets/image-2.png"
               alt="A woman inspecting crops in a greenhouse"
-              className="w-full h-full object-cover rounded-xl shadow-lg"
+              className="w-full h-full object-cover shadow-lg"
             />
           </div>
         </div>

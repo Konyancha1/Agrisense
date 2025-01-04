@@ -12,16 +12,14 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 z-50 w-full bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        {/* Logo Section */}
         <div className="flex items-center">
           <img
             src="/assets/logo.png"
             alt="Agrisense Logo"
-            className="h-16 w-auto"  // Increased logo size
+            className="h-16 w-auto" 
           />
         </div>
 
-        {/* Navigation Links for Large Screens */}
         <div className="hidden lg:flex space-x-8 text-gray-800 font-semibold font-poppins">
           <a href="#home" className="hover:text-green-600 transition-colors">
             Home
@@ -34,7 +32,6 @@ const Navbar: React.FC = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Toggle Button */}
         <button
           className="lg:hidden flex items-center text-gray-800"
           onClick={toggleMobileMenu}
@@ -47,10 +44,16 @@ const Navbar: React.FC = () => {
           )}
         </button>
 
-        {/* Login Button */}
+        {/* To be changed once Login page is done */}
         <div className="hidden lg:block">
-          <button className="bg-[#519E65] text-white px-4 lg:px-8 py-2 rounded-md hover:bg-green-700 transition-all">
-            Login
+          <button
+              className="bg-[#519E65] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-all"
+              onClick={() => {
+                const contactSection = document.getElementById("contact-us");
+                contactSection?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Request for Demo
           </button>
         </div>
       </div>
@@ -82,9 +85,12 @@ const Navbar: React.FC = () => {
             </a>
             <button
               className="bg-[#519E65] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-all"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                const contactSection = document.getElementById("contact-us");
+                contactSection?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
-              Login
+              Request for Demo
             </button>
           </div>
         </div>
