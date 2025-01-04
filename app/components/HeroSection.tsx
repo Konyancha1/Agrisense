@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="relative z-10 px-4 text-white">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#FFB743] leading-tight mb-6 transition-all ease-in-out duration-500 transform hover:scale-105">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#FFB743] leading-tight mb-6 transition-all ease-in-out duration-500 transform hover:scale-105">
             Simplify Compliance and <br /> Drive Growth with Agrisense.
           </h1>
           <p className="mt-4 text-lg text-gray-200 max-w-3xl mx-auto">

@@ -10,7 +10,7 @@ const BenefitsSection: FC = () => {
           <h1 className="text-2xl md:text-3xl font-bold text-[#16A34A]">
             Organize your farm Operations and get more done
           </h1>
-          <p className="mt-4 text-gray-700 text-base md:text-lg leading-relaxed">
+          <p className="mt-4 text-gray-700 text-lg leading-relaxed">
             Take control of your farm operations with tools designed to plan, track, and manage
             every task efficiently. With integrated scheduling, task management, work tracking, and
             detailed reporting, WaziTrack ensures your team stays aligned and productive—whether online or offline.
@@ -45,7 +45,7 @@ const BenefitsSection: FC = () => {
               ].map((feature, index) => (
                 <div key={index}>
                   <h3 className="text-xl font-semibold text-gray-900">{feature.title}</h3>
-                  <p className="text-base text-gray-700 mt-2">{feature.description}</p>
+                  <p className="text-lg text-gray-700 mt-2">{feature.description}</p>
                 </div>
               ))}
             </div>

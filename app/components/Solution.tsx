@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const OurSolution: React.FC = () => {
   return (
@@ -29,9 +30,12 @@ const OurSolution: React.FC = () => {
         </div>
         <div className="w-full md:w-[35%] mt-6 md:mt-0 flex justify-end">
           <div className="w-full h-auto max-h-[80%] relative">
-            <img
+            <Image
               src="/assets/image-2.png"
               alt="A woman inspecting crops in a greenhouse"
+              layout="responsive"
+              width={500} 
+              height={400} 
               className="w-full h-full object-cover shadow-lg"
             />
           </div>
