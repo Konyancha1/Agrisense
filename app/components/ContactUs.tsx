@@ -16,7 +16,7 @@ const ContactUsSection: React.FC = () => {
     <section className="py-12 md:py-16 lg:py-24" id="contact-us">
       <div className="container mx-auto px-6 sm:px-8 lg:px-16 space-y-6">
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#16A34A]">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#16A34A]">
             Schedule a Demo Call with us
           </h2>
         </div>

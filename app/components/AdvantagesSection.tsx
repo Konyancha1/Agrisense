@@ -11,7 +11,7 @@ const AdvantagesSection: FC = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-[#16A34A]">
                 ESG and Sustainability Tracking
             </h2>
-            <p className="mt-2 text-gray-700 text-base md:text-lg leading-relaxed">
+            <p className="mt-2 text-gray-700 text-lg leading-relaxed">
                 Track and optimize your farm’s environmental, social, and governance (ESG) impact with
                 real-time data to achieve your sustainability goals. Ensure compliance with global
                 sustainability standards, reduce waste, and improve efficiency. Easily generate reports
@@ -34,7 +34,7 @@ const AdvantagesSection: FC = () => {
                 <h2 className="text-2xl lg:text-3xl font-bold text-[#16A34A] mb-4">
                 Yield Prediction and Analysis
                 </h2>
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                <p className="text-gray-700 text-lg leading-relaxed">
                 Accurately forecast crop yields with data-driven insights. Analyze historical trends,
                 weather patterns, and soil conditions to make proactive decisions. Monitor real-time
                 growth, mitigate risks early, and optimize resources to maximize productivity and
@@ -55,7 +55,7 @@ const AdvantagesSection: FC = () => {
                 <h2 className="text-2xl lg:text-3xl font-bold text-[#16A34A] mb-4">
                 Farm Orders and Sales
                 </h2>
-                <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+                <p className="text-gray-600 leading-relaxed text-lg">
                 Streamline your farm's order and sales management with real-time
                 tracking, timely fulfillment, and optimized inventory. Leverage
                 sales insights to refine pricing, boost profitability, and enhance

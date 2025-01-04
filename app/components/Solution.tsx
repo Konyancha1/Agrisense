@@ -11,11 +11,11 @@ const OurSolution: React.FC = () => {
           <p className="text-lg text-yellow-500 mt-2 md:text-xl">
             Smarter. Simpler. Quicker
           </p>
-          <p className="mt-2 text-gray-600 leading-relaxed md:w-[90%] text-base md:text-lg">
+          <p className="mt-2 text-gray-600 leading-relaxed md:w-[90%] text-lg">
             Stay prepared for audits with WaziTrack Compliance Software. Our platform ensures you meet regulatory
             standards like GLOBALGAP, Fairtrade International, USDA Organic, EUDR, EU Organic Certification, HACCP, and more.
           </p>
-          <ul className="mt-4 space-y-4 text-gray-700 list-disc pl-6">
+          <ul className="mt-4 space-y-4 text-gray-700 list-disc pl-6 text-base">
             <li>
               <strong>AI-Powered Accuracy:</strong> Correct critical errors in real-time with AI-driven corrective actions.
             </li>

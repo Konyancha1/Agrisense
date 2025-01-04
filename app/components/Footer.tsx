@@ -6,21 +6,19 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#DCECE0] py-6 md:py-12 px-6 md:px-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-start">
-        {/* Logo and description */}
         <div className="text-center md:text-left mb-6 md:mb-0 w-full md:w-1/3">
           <div className="flex justify-center md:justify-start">
             <Image src="/assets/footer-logo.png" alt="Agrisense Logo" width={200} height={80} />
           </div>
-          <p className="mt-4 text-gray-700 text-sm sm:text-base md:text-lg">
+          <p className="mt-4 text-gray-700 text-base md:text-lg">
             Revolutionizing agriculture with efficiency and speed. <br />
             Discover how we can help, <span className="text-[#519E65]">contact us today!</span>
           </p>
         </div>
 
-        {/* Navigation links */}
         <div className="text-center md:text-left mt-4 md:mt-0 mb-6 md:mb-0 w-full md:w-1/4">
           <h3 className="text-lg font-semibold">Company</h3>
-          <ul className="mt-2 md:mt-4 space-y-2 text-gray-700 text-sm sm:text-base md:text-lg">
+          <ul className="mt-2 md:mt-4 space-y-2 text-gray-700 text-base md:text-lg">
             <li>
               <Link href="#home" className="hover:text-[#519E65]">Home</Link>
             </li>
@@ -36,7 +34,6 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Contact and social links */}
         <div className="text-center md:text-left mt-4 md:mt-0 mb-6 md:mb-0 w-full md:w-1/3">
           <h3 className="text-lg font-semibold">Get In Touch</h3>
           <ul className="mt-4 space-y-2 text-gray-700 text-sm sm:text-base md:text-lg">
@@ -87,14 +84,14 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto mt-6 md:mt-12 border-t pt-6 text-center text-gray-600 flex flex-col lg:flex-row justify-between items-center">
-        <p className="text-sm sm:text-base md:text-lg">
+        <p className="text-base md:text-lg">
           &copy; {new Date().getFullYear()} AgriSense Technology Limited. All rights reserved.
         </p>
         <div className="mt-4 lg:mt-0 flex flex-col md:flex-row justify-center md:space-x-6">
-          <Link href="#" className="hover:text-[#519E65] text-sm sm:text-base md:text-lg">
+          <Link href="#" className="hover:text-[#519E65] text-base md:text-lg">
             Terms & Conditions
           </Link>
-          <Link href="#" className="hover:text-[#519E65] text-sm sm:text-base md:text-lg">
+          <Link href="#" className="hover:text-[#519E65] text-base md:text-lg">
             Privacy Policy
           </Link>
         </div>

@@ -57,10 +57,10 @@ const FeaturesSection: FC = () => {
             >
               <div className="text-2xl text-gray-900 mb-4">{feature.icon}</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-              <p className="text-gray-800 mb-4">{feature.description}</p>
+              <p className="text-gray-800 mb-4 text-base">{feature.description}</p>
               <a
                 href="#contact-us"
-                className="text-sm font-semibold text-gray-900 hover:underline flex items-center"
+                className="text-base font-semibold text-gray-900 hover:underline flex items-center"
               >
                 Learn more <FaAngleRight className="ml-2" size={16} />
               </a>
