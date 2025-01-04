@@ -31,7 +31,6 @@ export default function Home() {
       <div className="hidden md:block w-full border-t border-gray-100 my-8"></div>
 
       <ContactUsSection />
-      <div className="hidden md:block w-full border-t border-gray-100 my-8"></div>
 
       <Footer />
     </>
