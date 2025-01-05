@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
                 contactSection?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Request for Demo
+              Request a Demo
           </button>
         </div>
       </div>
