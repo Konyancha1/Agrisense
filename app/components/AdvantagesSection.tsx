@@ -70,6 +70,30 @@ const AdvantagesSection: FC = () => {
                 />
             </div>
         </div>
+
+        <div className="w-full px-6 md:px-20 mt-12 flex flex-col md:flex-row gap-8 lg:gap-12">
+            <div className="w-full md:w-[60%] flex flex-col justify-center order-first md:order-first">
+                <h2 className="text-2xl lg:text-3xl font-bold text-[#16A34A] mb-4">
+                Financial  Inclusion
+                </h2>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                Drive farm growth with our integrated financial tools, providing 
+                seamless access to financing, credit, and essential financial 
+                services. Invest in resources, fuel innovation, and track expenses 
+                with transparency through our platform’s connection to financial 
+                institutions. By promoting financial literacy and access, we create a 
+                thriving, sustainable agricultural ecosystem where every farmer and 
+                agribusiness can thrive.
+                </p>
+            </div>
+            <div className="w-full md:w-[40%] md:mx-0 h-72 md:h-auto overflow-hidden rounded-lg order-last md:order-none">
+                <img
+                src="/assets/image-7.png"
+                alt="Production Trend Chart"
+                className="w-full h-full object-contain"
+                />
+            </div>
+        </div>
     </section>
   );
 };

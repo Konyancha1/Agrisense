@@ -50,10 +50,30 @@ const FeaturesSection: FC = () => {
           Accreditors and certifiers often face time-consuming, error-prone, and inefficient paper-based inspection processes. WaziTrack simplifies and streamlines inspections by providing:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-          {features.map((feature, index) => (
+          {features.slice(0, 3).map((feature, index) => (
             <div
               key={feature.title}
-              className={`bg-[#FFB743] text-left rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300 ${index === 0 ? 'md:-rotate-6' : ''}`}
+              className={`bg-[#FFB743] text-left rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300 ${
+                index === 0 ? 'md:-rotate-6' : ''
+              }`}
+            >
+              <div className="text-2xl text-gray-900 mb-4">{feature.icon}</div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
+              <p className="text-gray-800 mb-4 text-base">{feature.description}</p>
+              <a
+                href="#contact-us"
+                className="text-base font-semibold text-gray-900 hover:underline flex items-center"
+              >
+                Learn more <FaAngleRight className="ml-2" size={16} />
+              </a>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 justify-center mt-8 md:w-[65%] mx-auto">
+          {features.slice(3).map((feature) => (
+            <div
+              key={feature.title}
+              className="bg-[#FFB743] text-left rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300"
             >
               <div className="text-2xl text-gray-900 mb-4">{feature.icon}</div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>

@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-start">
         <div className="text-center md:text-left mb-6 md:mb-0 w-full md:w-1/3">
           <div className="flex justify-center md:justify-start">
-            <Image src="/assets/footer-logo.png" alt="Agrisense Logo" width={200} height={80} />
+            <Image src="/assets/footer-logo.png" alt="Agrisense Logo" width={220} height={100} />
           </div>
           <p className="mt-4 text-gray-700 text-base md:text-lg">
             Revolutionizing agriculture with efficiency and speed. <br />
