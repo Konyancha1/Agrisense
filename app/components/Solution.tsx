@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const OurSolution: React.FC = () => {
   return (
-    <section id="our-solution" className="py-6 font-poppins md:py-8 px-6 md:px-12 lg:px-24">
+    <section className="py-6 font-poppins md:py-8 px-6 md:px-12 lg:px-24">
       <div className="flex flex-col md:flex-row px-6 md:px-20 items-center justify-between">
         <div className="text-left md:w-[60%]">
           <h2 className="text-2xl md:text-3xl font-bold text-[#16A34A] leading-tight">

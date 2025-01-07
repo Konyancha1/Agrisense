@@ -38,8 +38,8 @@ const Footer: React.FC = () => {
           <h3 className="text-lg font-semibold">Get In Touch</h3>
           <ul className="mt-4 space-y-2 text-gray-700 text-sm sm:text-base md:text-lg">
             <li>
-              <Link href="mailto:agrisense.coffee@gmail.com" className="hover:text-[#519E65]">
-                agrisense.coffee@gmail.com
+              <Link href="mailto:info@agrisensetech.com" className="hover:text-[#519E65]">
+                info@agrisensetech.com
               </Link>
             </li>
             <li>

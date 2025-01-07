@@ -1,12 +1,27 @@
 'use client';
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
+
+  const handleScroll = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsMobileMenuOpen(false);
+      setIsDropdownOpen(false);
+    }
   };
 
   return (
@@ -27,9 +42,57 @@ const Navbar: React.FC = () => {
           <a href="#about-us" className="hover:text-green-600 transition-colors">
             About Us
           </a>
-          <a href="#our-solution" className="hover:text-green-600 transition-colors">
-            Our Solution
-          </a>
+          <div className="relative">
+            <button
+              className="flex items-center hover:text-green-600 transition-colors"
+              onClick={toggleDropdown}
+            >
+              Our Solution
+              <IoIosArrowDown
+                className={`ml-1 text-xl transition-transform ${
+                  isDropdownOpen ? "rotate-180" : "rotate-0"
+                }`}
+              />
+            </button>
+            {isDropdownOpen && (
+              <div className="absolute top-full mt-2 w-48 bg-white border rounded-md shadow-lg z-10">
+                <ul className="flex flex-col space-y-2 p-4 text-gray-800 text-sm">
+                  <li>
+                    <button
+                      className="hover:text-green-600 transition-colors w-full text-left"
+                      onClick={() => handleScroll("esg-section")}
+                    >
+                      ESG and Sustainability Tracking
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className="hover:text-green-600 transition-colors w-full text-left"
+                      onClick={() => handleScroll("yield-section")}
+                    >
+                      Yield Prediction and Analysis
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className="hover:text-green-600 transition-colors w-full text-left"
+                      onClick={() => handleScroll("orders-section")}
+                    >
+                      Farm Orders and Sales
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className="hover:text-green-600 transition-colors w-full text-left"
+                      onClick={() => handleScroll("finance-section")}
+                    >
+                      Financial Inclusion
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
 
         <button
@@ -47,13 +110,10 @@ const Navbar: React.FC = () => {
         {/* To be changed once Login page is done */}
         <div className="hidden lg:block">
           <button
-              className="bg-[#519E65] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-all"
-              onClick={() => {
-                const contactSection = document.getElementById("contact-us");
-                contactSection?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              Request a Demo
+            className="bg-[#519E65] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-all"
+            onClick={() => handleScroll("contact-us")}
+          >
+            Request a Demo
           </button>
         </div>
       </div>
@@ -76,19 +136,60 @@ const Navbar: React.FC = () => {
             >
               About Us
             </a>
-            <a
-              href="#our-solution"
-              className="hover:text-green-600 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Our Solution
-            </a>
+            <div className="w-full">
+              <button
+                className="flex justify-center items-center w-full hover:text-green-600 transition-colors"
+                onClick={toggleDropdown}
+              >
+                Our Solution
+                <IoIosArrowDown
+                  className={`ml-1 text-xl transition-transform ${
+                    isDropdownOpen ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </button>
+              {isDropdownOpen && (
+                <div className="w-full">
+                  <ul className="flex justify-center items-center flex-col space-y-2 p-4 text-gray-800 text-sm">
+                    <li>
+                      <button
+                        className="hover:text-green-600 transition-colors w-full text-left"
+                        onClick={() => handleScroll("esg-section")}
+                      >
+                        ESG and Sustainability Tracking
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        className="hover:text-green-600 transition-colors w-full text-left"
+                        onClick={() => handleScroll("yield-section")}
+                      >
+                        Yield Prediction and Analysis
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        className="hover:text-green-600 transition-colors w-full text-left"
+                        onClick={() => handleScroll("orders-section")}
+                      >
+                        Farm Orders and Sales
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        className="hover:text-green-600 transition-colors w-full text-left"
+                        onClick={() => handleScroll("finance-section")}
+                      >
+                        Financial Inclusion
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
             <button
               className="bg-[#519E65] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-all"
-              onClick={() => {
-                const contactSection = document.getElementById("contact-us");
-                contactSection?.scrollIntoView({ behavior: "smooth" });
-              }}
+              onClick={() => handleScroll("contact-us")}
             >
               Request for Demo
             </button>

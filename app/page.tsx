@@ -16,19 +16,19 @@ export default function Home() {
       <Hero />
       
       <AboutUs />
-      <div className="block w-full border-t border-gray-100 my-8"></div>
+      <div className="block w-full border-t border-gray-100 my-4"></div>
 
       <OurSolution />
-      <div className="block w-full border-t border-gray-100 my-8"></div>
+      <div className="block w-full border-t border-gray-100 my-4"></div>
 
       <FeaturesSection />
-      <div className="block w-full border-t border-gray-100 my-8"></div>
+      <div className="block w-full border-t border-gray-100 my-4"></div>
 
       <BenefitsSection />
-      <div className="block w-full border-t border-gray-100 my-8"></div>
+      <div className="block w-full border-t border-gray-100 my-4"></div>
 
       <AdvantagesSection />
-      <div className="block w-full border-t border-gray-100 my-8"></div>
+      <div className="block w-full border-t border-gray-100 my-4"></div>
 
       <ContactUsSection />
 
