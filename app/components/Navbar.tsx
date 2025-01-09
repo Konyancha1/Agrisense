@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           <img
             src="/assets/logo.png"
             alt="Agrisense Logo"
-            className="h-16 w-auto" 
+            className="h-12 md:h-16 w-auto" 
           />
         </div>
 
@@ -191,7 +191,7 @@ const Navbar: React.FC = () => {
               className="bg-[#519E65] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-all"
               onClick={() => handleScroll("contact-us")}
             >
-              Request for Demo
+              Request a Demo
             </button>
           </div>
         </div>
