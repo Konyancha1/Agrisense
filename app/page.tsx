@@ -1,31 +1,55 @@
 'use client'
-import AboutUs from "./components/AboutSection";
 import AdvantagesSection from "./components/AdvantagesSection";
-import BenefitsSection from "./components/BenefitsSection";
 import ContactUsSection from "./components/ContactUs";
-import FeaturesSection from "./components/FeaturesSection";
 import Footer from "./components/Footer";
 import Hero from "./components/HeroSection";
+import ImpactSnapshotSection from "./components/Impact";
 import Navbar from "./components/Navbar";
-import OurSolution from "./components/Solution";
+import WhatWeOfferSection from "./components/Offer";
+import PlatformSection from "./components/PlatformSection";
+import WhoWeServeSection from "./components/ServeSection";
+import ImpactStoriesSection from "./components/StorySection";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
+
+      <ImpactSnapshotSection />
+      <div className="block w-full border-t border-gray-100 my-4"></div>
+
+      <WhatWeOfferSection />
+      <div className="block w-full border-t border-gray-100 my-4"></div>
+
+      <WhoWeServeSection />
+      <div className="block w-full border-t border-gray-100 my-4"></div>
+
+      <PlatformSection />
+      <div className="block w-full border-t border-gray-100 my-4"></div>
+
+      <ImpactStoriesSection />
+      <div className="block w-full border-t border-gray-100 my-4"></div>
+
+      {/* Uncomment the following sections as needed */}
+      {/* <ESGSection /> */}
+      {/* <YieldSection /> */}
+      {/* <OrdersSection /> */}
+      {/* <FinanceSection /> */}
+
+      {/* <TestimonialsSection /> */}
       
-      <AboutUs />
-      <div className="block w-full border-t border-gray-100 my-4"></div>
+      {/* <AboutUs />
+      <div className="block w-full border-t border-gray-100 my-4"></div> */}
 
-      <OurSolution />
-      <div className="block w-full border-t border-gray-100 my-4"></div>
+      {/* <OurSolution />
+      <div className="block w-full border-t border-gray-100 my-4"></div> */}
 
-      <FeaturesSection />
-      <div className="block w-full border-t border-gray-100 my-4"></div>
+      {/* <FeaturesSection />
+      <div className="block w-full border-t border-gray-100 my-4"></div> */}
 
-      <BenefitsSection />
-      <div className="block w-full border-t border-gray-100 my-4"></div>
+      {/* <BenefitsSection />
+      <div className="block w-full border-t border-gray-100 my-4"></div> */}
 
       <AdvantagesSection />
       <div className="block w-full border-t border-gray-100 my-4"></div>
