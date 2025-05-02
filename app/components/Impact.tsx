@@ -47,7 +47,7 @@ const ImpactSnapshotSection: FC = () => {
           <div className="h-1 w-24 bg-[#FFB743] mx-auto"></div>
         </div>
         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-          Measurable results that demonstrate our platform's transformative impact on agricultural communities
+          Measurable results that demonstrate our platform transformative impact on agricultural communities
         </p>
       </div>
 

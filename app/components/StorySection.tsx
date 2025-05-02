@@ -1,10 +1,6 @@
 'use client';
 
 import { FC } from 'react';
-import Image from 'next/image';
-
-import kenyaFlag from "../../Assets/Images/Kenya.png";
-import rwandaFlag from "../../Assets/Images/Rwanda.png";
 
 const StatsSection: FC = () => {
   return (
