@@ -62,7 +62,7 @@ const PlatformSection: FC = () => {
             className="rounded-lg overflow-hidden shadow-lg"
           >
             <SwiperSlide>
-              <div className="relative">
+              <div className="relative group">
                 <img
                   src={Comply.src}
                   alt="Comply Platform"
