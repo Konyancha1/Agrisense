@@ -1,5 +1,6 @@
 'use client';
 import { FC, useState } from "react";
+import Image from "next/image";
 import { 
   Globe, 
   Leaf, 
@@ -8,6 +9,9 @@ import {
   ChevronRight,
   CheckCircle
 } from "lucide-react";
+
+import complianceImage from "../../Assets/Images/Img.png";
+import complianceImage2 from "../../Assets/Images/Img2.png";
 
 const WhatWeOfferSection: FC = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -153,9 +157,15 @@ const WhatWeOfferSection: FC = () => {
               <div className="aspect-w-16 aspect-h-9 relative z-10 flex items-center justify-center">
                 <div className="h-64 w-full bg-gray-100 rounded-lg flex items-center justify-center">
                   {activeTab === 0 && (
-                    <div className="text-center">
-                      <Globe size={64} className="text-[#16A34A] mx-auto mb-4 opacity-50" />
-                      <h4 className="font-semibold text-gray-600">Global Certification Standards</h4>
+                    <div className="text-center w-full h-full relative rounded-lg overflow-hidden">
+                      <Image 
+                        src={complianceImage}
+                        alt="Global Compliance & Traceability"
+                        fill
+                        className="rounded-lg"
+                        style={{ objectFit: 'cover' }}
+                        priority
+                      />
                     </div>
                   )}
                   {activeTab === 1 && (
@@ -171,9 +181,15 @@ const WhatWeOfferSection: FC = () => {
                     </div>
                   )}
                   {activeTab === 3 && (
-                    <div className="text-center">
-                      <LineChart size={64} className="text-[#16A34A] mx-auto mb-4 opacity-50" />
-                      <h4 className="font-semibold text-gray-600">Smart Management Dashboard</h4>
+                    <div className="text-center w-full h-full relative rounded-lg overflow-hidden">
+                      <Image 
+                        src={complianceImage2}
+                        alt="Smart Farm Management"
+                        fill
+                        className="rounded-lg"
+                        style={{ objectFit: 'cover' }}
+                        priority
+                      />
                     </div>
                   )}
                 </div>
