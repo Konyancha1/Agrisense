@@ -1,33 +1,37 @@
 'use client'
-import AboutUs from "./components/AboutSection";
-import AdvantagesSection from "./components/AdvantagesSection";
-import BenefitsSection from "./components/BenefitsSection";
+import PartnersSection from "./components/AdvantagesSection";
 import ContactUsSection from "./components/ContactUs";
-import FeaturesSection from "./components/FeaturesSection";
 import Footer from "./components/Footer";
 import Hero from "./components/HeroSection";
+import ImpactSnapshotSection from "./components/Impact";
 import Navbar from "./components/Navbar";
-import OurSolution from "./components/Solution";
+import WhatWeOfferSection from "./components/Offer";
+import PlatformSection from "./components/PlatformSection";
+import WhoWeServeSection from "./components/ServeSection";
+import ImpactStoriesSection from "./components/StorySection";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      
-      <AboutUs />
+
+      <ImpactSnapshotSection />
       <div className="block w-full border-t border-gray-100 my-4"></div>
 
-      <OurSolution />
+      <WhatWeOfferSection />
       <div className="block w-full border-t border-gray-100 my-4"></div>
 
-      <FeaturesSection />
+      <WhoWeServeSection />
       <div className="block w-full border-t border-gray-100 my-4"></div>
 
-      <BenefitsSection />
+      <PlatformSection />
       <div className="block w-full border-t border-gray-100 my-4"></div>
 
-      <AdvantagesSection />
+      <ImpactStoriesSection />
+      <div className="block w-full border-t border-gray-100 my-4"></div>
+
+      <PartnersSection />
       <div className="block w-full border-t border-gray-100 my-4"></div>
 
       <ContactUsSection />

@@ -17,7 +17,7 @@ const ContactUsSection: React.FC = () => {
       <div className="container mx-auto px-6 sm:px-8 lg:px-16 space-y-6">
         <div className="text-center">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#16A34A]">
-            Schedule a Demo Call with us
+          Ready to transform how you grow, certify, and finance agriculture?
           </h2>
         </div>
         <div className="flex justify-center p-3">

@@ -39,59 +39,13 @@ const Navbar: React.FC = () => {
           <a href="#home" className="hover:text-green-600 transition-colors">
             Home
           </a>
-          <a href="#about-us" className="hover:text-green-600 transition-colors">
-            About Us
+          <a href="#what-we-offer" className="hover:text-green-600 transition-colors">
+            What We Offer
           </a>
           <div className="relative">
-            <button
-              className="flex items-center hover:text-green-600 transition-colors"
-              onClick={toggleDropdown}
-            >
-              Our Solution
-              <IoIosArrowDown
-                className={`ml-1 text-xl transition-transform ${
-                  isDropdownOpen ? "rotate-180" : "rotate-0"
-                }`}
-              />
-            </button>
-            {isDropdownOpen && (
-              <div className="absolute top-full mt-2 w-48 bg-white border rounded-md shadow-lg z-10">
-                <ul className="flex flex-col space-y-2 p-4 text-gray-800 text-sm">
-                  <li>
-                    <button
-                      className="hover:text-green-600 transition-colors w-full text-left"
-                      onClick={() => handleScroll("esg-section")}
-                    >
-                      ESG and Sustainability Tracking
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="hover:text-green-600 transition-colors w-full text-left"
-                      onClick={() => handleScroll("yield-section")}
-                    >
-                      Yield Prediction and Analysis
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="hover:text-green-600 transition-colors w-full text-left"
-                      onClick={() => handleScroll("orders-section")}
-                    >
-                      Farm Orders and Sales
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      className="hover:text-green-600 transition-colors w-full text-left"
-                      onClick={() => handleScroll("finance-section")}
-                    >
-                      Financial Inclusion
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            )}
+            <a href="#who-we-serve" className="hover:text-green-600 transition-colors">
+              Who We Serve
+            </a>
           </div>
         </div>
 
@@ -113,7 +67,7 @@ const Navbar: React.FC = () => {
             className="bg-[#519E65] text-white px-6 py-2 rounded-md hover:bg-green-700 transition-all"
             onClick={() => handleScroll("contact-us")}
           >
-            Request a Demo
+            Book a Demo
           </button>
         </div>
       </div>
