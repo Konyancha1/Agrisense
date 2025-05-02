@@ -11,8 +11,7 @@ const Footer: React.FC = () => {
             <Image src="/assets/footer-logo.png" alt="Agrisense Logo" width={220} height={100} />
           </div>
           <p className="mt-4 text-gray-700 text-base md:text-lg">
-            Revolutionizing agriculture with efficiency and speed. <br />
-            Discover how we can help, <span className="text-[#519E65]">contact us today!</span>
+          Smart Farming. Global Compliance.<br /> Financing Unlocked. <span> <Link href="#contact-us" className="text-[#519E65]">contact us today!</Link></span>
           </p>
         </div>
 
@@ -48,7 +47,7 @@ const Footer: React.FC = () => {
               </Link>
             </li>
             <li className="flex justify-center md:justify-start space-x-4">
-              <Link href="https://facebook.com" target="_blank" className="hover:opacity-80">
+              <Link href="https://web.facebook.com/profile.php?id=61565092580073" target="_blank" className="hover:opacity-80">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -58,7 +57,7 @@ const Footer: React.FC = () => {
                   <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24H12.81v-9.294H9.692V11.13h3.118V8.41c0-3.1 1.892-4.788 4.658-4.788 1.325 0 2.463.099 2.795.143v3.244l-1.918.001c-1.504 0-1.795.714-1.795 1.762v2.309h3.59l-.467 3.576h-3.123V24h6.127C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z" />
                 </svg>
               </Link>
-              <Link href="https://twitter.com" target="_blank" className="hover:opacity-80">
+              <Link href="https://x.com/AgriSenseTech00" target="_blank" className="hover:opacity-80">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
@@ -68,7 +67,7 @@ const Footer: React.FC = () => {
                   <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                 </svg>
               </Link>
-              <Link href="https://linkedin.com" target="_blank" className="hover:opacity-80">
+              <Link href="https://www.linkedin.com/company/agrisense-co/posts/?feedView=all" target="_blank" className="hover:opacity-80">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
