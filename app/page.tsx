@@ -1,5 +1,5 @@
 'use client'
-import AdvantagesSection from "./components/AdvantagesSection";
+import PartnersSection from "./components/AdvantagesSection";
 import ContactUsSection from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Hero from "./components/HeroSection";
@@ -51,7 +51,7 @@ export default function Home() {
       {/* <BenefitsSection />
       <div className="block w-full border-t border-gray-100 my-4"></div> */}
 
-      <AdvantagesSection />
+      <PartnersSection />
       <div className="block w-full border-t border-gray-100 my-4"></div>
 
       <ContactUsSection />

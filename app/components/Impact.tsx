@@ -54,12 +54,15 @@ const ImpactSnapshotSection: FC = () => {
   return (
     <section className="py-4 font-poppins md:py-6 px-6 md:px-12 lg:px-24">
       <div className="container px-6 md:px-20">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#16A34A] mb-4">
-          {/* Impact Snapshot */}
-        </h2>
-        <p className="text-gray-600 text-lg mb-8 lg:mb-12">
-          {/* Measurable results that demonstrate our platform's transformative impact on agricultural communities */}
-        </p>
+        <div className="text-center mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#16A34A] mb-2 relative inline-block">
+            Impacts
+          </h1>
+          <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
+            Measurable results that demonstrate our platform's transformative impact on agricultural communities
+          </p>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
           {impactStats.slice(0, 3).map((stat, index) => (
             <div
