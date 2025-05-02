@@ -12,6 +12,8 @@ import {
 
 import complianceImage from "../../Assets/Images/Img.png";
 import complianceImage2 from "../../Assets/Images/Img2.png";
+import complianceImage3 from "../../Assets/Images/Smart.png";
+import complianceImage4 from "../../Assets/Images/Cash.png";
 
 const WhatWeOfferSection: FC = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -169,15 +171,27 @@ const WhatWeOfferSection: FC = () => {
                     </div>
                   )}
                   {activeTab === 1 && (
-                    <div className="text-center">
-                      <Leaf size={64} className="text-[#16A34A] mx-auto mb-4 opacity-50" />
-                      <h4 className="font-semibold text-gray-600">Climate-Smart Solutions</h4>
+                    <div className="text-center w-full h-full relative rounded-lg overflow-hidden">
+                      <Image 
+                        src={complianceImage3}
+                        alt="Climate-Smart & Regenerative Farming"
+                        fill
+                        className="rounded-lg"
+                        style={{ objectFit: 'cover' }}
+                        priority
+                      />
                     </div>
                   )}
                   {activeTab === 2 && (
-                    <div className="text-center">
-                      <CreditCard size={64} className="text-[#16A34A] mx-auto mb-4 opacity-50" />
-                      <h4 className="font-semibold text-gray-600">Financial Access Tools</h4>
+                    <div className="text-center w-full h-full relative rounded-lg overflow-hidden">
+                      <Image 
+                        src={complianceImage4}
+                        alt="Smart Farm Management"
+                        fill
+                        className="rounded-lg"
+                        style={{ objectFit: 'cover' }}
+                        priority
+                      />
                     </div>
                   )}
                   {activeTab === 3 && (
