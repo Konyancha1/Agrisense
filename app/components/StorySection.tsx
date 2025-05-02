@@ -27,25 +27,7 @@ const StatsSection: FC = () => {
         <div className="p-6 text-center">
           <h3 className="text-5xl md:text-6xl font-bold text-[#16A34A]">2</h3>
           <p className="text-gray-700 mt-3 text-lg flex items-center justify-center gap-2">
-            Countries:
-            <span className="inline-flex items-center gap-1">
-              <Image 
-                src={kenyaFlag} 
-                alt="Kenya Flag" 
-                width={24} 
-                height={16} 
-                className="rounded-sm object-cover"
-              />
-              Kenya & 
-              <Image 
-                src={rwandaFlag} 
-                alt="Rwanda Flag" 
-                width={24} 
-                height={16} 
-                className="rounded-sm ml-1 object-cover"
-              />
-              Rwanda
-            </span>
+            Countries
           </p>
         </div>
       </div>

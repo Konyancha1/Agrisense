@@ -23,12 +23,12 @@ const PartnersSection: FC = () => {
     { src: startupLogo, alt: "Startup Logo" },
     { src: tinyLogo, alt: "Tiny Logo" },
     { src: siliconLogo, alt: "Silicon Logo" },
+    { src: darkLogo, alt: "Dark Logo" },
+    { src: microsoftLogo, alt: "Microsoft Logo" },
     { src: jerikaLogo, alt: "Jerika Logo" },
     { src: gmacLogo, alt: "GMAC Logo" },
-    { src: darkLogo, alt: "Dark Logo" },
     { src: cbsLogo, alt: "CBS Logo" },
     { src: ahvinchaLogo, alt: "Ahvincha Logo" },
-    { src: microsoftLogo, alt: "Microsoft Logo" },
     { src: karmiLogo, alt: "Karmi Logo" },
   ];
 
