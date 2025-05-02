@@ -18,7 +18,6 @@ import microsoftLogo from '../../Assets/Images/microsoft-logo.png';
 import karmiLogo from '../../Assets/Images/karmi-logo.png';
 
 const PartnersSection: FC = () => {
-  // Array of all partner logos with their alt text
   const partners = [
     { src: startupLogo, alt: "Startup Logo" },
     { src: tinyLogo, alt: "Tiny Logo" },
@@ -35,7 +34,6 @@ const PartnersSection: FC = () => {
   return (
     <section className="py-12 px-6 md:px-20 font-poppins bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-[#16A34A]">
             Our Partners

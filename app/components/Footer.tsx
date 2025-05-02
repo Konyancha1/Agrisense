@@ -43,7 +43,12 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <Link href="tel:+254769999066" className="hover:text-[#519E65]">
-                +254 769 999 066
+                Kenya: +254 769 999 066
+              </Link>
+            </li>
+            <li>
+              <Link href="tel:+250783809328" className="hover:text-[#519E65]">
+                Rwanda: +250 783 809 328
               </Link>
             </li>
             <li className="flex justify-center md:justify-start space-x-4">

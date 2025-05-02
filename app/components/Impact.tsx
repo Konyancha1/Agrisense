@@ -1,7 +1,8 @@
 'use client';
 import { FC } from "react";
+import { motion } from "framer-motion";
 import { FaAngleRight } from "react-icons/fa";
-import { TrendingUp, Users, CreditCard, BarChart2, Award } from "lucide-react";
+import { TrendingUp, CreditCard, BarChart2, Award } from "lucide-react";
 
 const impactStats = [
   {
@@ -34,53 +35,49 @@ const ImpactSnapshotSection: FC = () => {
   const handleScroll = (elementId: string): void => {
     const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    } else {
-      console.warn(`Element with id ${elementId} not found`);
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
   return (
-    <section className="py-4 font-poppins md:py-6 px-6 md:px-12 lg:px-24">
-      <div className="container px-6 md:px-20">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#16A34A] mb-2 relative inline-block">
-            Impacts
-          </h1>
-          <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
-            Measurable results that demonstrate our platform's transformative impact on agricultural communities
-          </p>
+    <section className="py-6 px-6 md:px-12 lg:px-24 font-poppins">
+      <div className="text-center mb-8">
+        <div className="text-center mb-4">
+          <h2 className="text-3xl font-bold text-[#16A34A] mb-4">Impact Snapshot</h2>
+          <div className="h-1 w-24 bg-[#FFB743] mx-auto"></div>
         </div>
+        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          Measurable results that demonstrate our platform's transformative impact on agricultural communities
+        </p>
+      </div>
 
-        {/* Unified grid: 2 cards per row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 justify-center mt-8 md:w-[75%] mx-auto">
+      <div className="w-full">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 justify-center items-center">
           {impactStats.map((stat, index) => (
-            <div
+            <motion.div
               key={stat.title}
-              className={`bg-[#FFB743] text-left rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300 ${
-                index === 0 ? 'md:-rotate-6' : ''
-              }`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-[#FFB743] rounded-xl p-6 shadow-md w-[280px] md:w-[300px] lg:w-[320px] h-[320px] text-center"
             >
-              <div className="flex items-center justify-center h-16 w-16 rounded-full bg-yellow-100 mb-4 mx-auto">
-                <div className="text-[#16A34A]">{stat.icon}</div>
+              <div className="flex items-center justify-center h-16 w-16 rounded-full bg-yellow-100 mb-4 mx-auto text-[#16A34A]">
+                {stat.icon}
               </div>
-              <div className="text-center mb-3">
+              <div className="mb-3">
                 <span className="text-3xl font-bold text-gray-900">{stat.value}</span>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">{stat.title}</h3>
-              <p className="text-gray-800 mb-4 text-base text-center">{stat.description}</p>
-              <div className="text-center">
-                <button
-                  className="text-base font-semibold text-gray-900 hover:underline flex items-center justify-center"
-                  onClick={() => handleScroll("contact-us")}
-                >
-                  Learn more <FaAngleRight className="ml-2" size={16} />
-                </button>
-              </div>
-            </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{stat.title}</h3>
+              <p className="text-gray-800 mb-4 text-base">{stat.description}</p>
+              <button
+                className="text-base font-semibold text-gray-900 hover:underline flex items-center justify-center mx-auto"
+                onClick={() => handleScroll("contact-us")}
+              >
+                Learn more <FaAngleRight className="ml-2" size={16} />
+              </button>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -31,26 +31,6 @@ export default function Home() {
       <ImpactStoriesSection />
       <div className="block w-full border-t border-gray-100 my-4"></div>
 
-      {/* Uncomment the following sections as needed */}
-      {/* <ESGSection /> */}
-      {/* <YieldSection /> */}
-      {/* <OrdersSection /> */}
-      {/* <FinanceSection /> */}
-
-      {/* <TestimonialsSection /> */}
-      
-      {/* <AboutUs />
-      <div className="block w-full border-t border-gray-100 my-4"></div> */}
-
-      {/* <OurSolution />
-      <div className="block w-full border-t border-gray-100 my-4"></div> */}
-
-      {/* <FeaturesSection />
-      <div className="block w-full border-t border-gray-100 my-4"></div> */}
-
-      {/* <BenefitsSection />
-      <div className="block w-full border-t border-gray-100 my-4"></div> */}
-
       <PartnersSection />
       <div className="block w-full border-t border-gray-100 my-4"></div>
 
