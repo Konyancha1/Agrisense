@@ -50,7 +50,7 @@ const PlatformSection: FC = () => {
           </div>
         </div>
 
-        <div className="flex-1 max-w-[50%]">
+        <div className="flex-1 max-w-[90%] md:max-w-[50%]">
           <Swiper
             spaceBetween={10}
             slidesPerView={1}
