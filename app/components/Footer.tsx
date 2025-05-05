@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           <h3 className="text-lg font-semibold">Get In Touch</h3>
           <ul className="mt-4 space-y-2 text-gray-700 text-sm sm:text-base md:text-lg">
             <li>
-              <Link href="mailto:info@agrisensetech.com" className="hover:text-[#519E65]">
+              <Link href="mailto:dancan.odira@agrisensetech.com" className="hover:text-[#519E65]">
                 partnerships@agrisensetech.com
               </Link>
             </li>
@@ -50,6 +50,11 @@ const Footer: React.FC = () => {
               <Link href="tel:+250783809328" className="hover:text-[#519E65]">
                 Rwanda: +250 783 809 328
               </Link>
+            </li>
+            <li>
+              <p className="text-gray-700 text-sm sm:text-base md:text-lg">
+                Headquarters: 42 KN 40 St, Kimoronko, Kigali, Rwanda
+              </p>
             </li>
             <li className="flex justify-center md:justify-start space-x-4">
               <Link href="https://web.facebook.com/profile.php?id=61565092580073" target="_blank" className="hover:opacity-80">
