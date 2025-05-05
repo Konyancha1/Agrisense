@@ -1,18 +1,11 @@
 'use client';
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
-  };
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen((prev) => !prev);
   };
 
   const handleScroll = (sectionId: string) => {
@@ -20,7 +13,6 @@ const Navbar: React.FC = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
-      setIsDropdownOpen(false);
     }
   };
 
