@@ -38,9 +38,6 @@ const PartnersSection: FC = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-[#16A34A]">
             Our Partners
           </h2>
-          <p className="text-gray-700 mt-2">
-            Trusted by leading organizations
-          </p>
         </div>
 
         {/* Partners Logo Grid */}
