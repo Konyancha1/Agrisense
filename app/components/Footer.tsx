@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           <ul className="mt-4 space-y-2 text-gray-700 text-sm sm:text-base md:text-lg">
             <li>
               <Link href="mailto:dancan.odira@agrisensetech.com" className="hover:text-[#519E65]">
-                partnerships@agrisensetech.com
+                dancan.odira@agrisensetech.com
               </Link>
             </li>
             <li>
