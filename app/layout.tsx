@@ -14,12 +14,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AgriSense - Revolutionizing Agriculture",
-  description: "AgriSense leverages technology to enhance agricultural efficiency, improve productivity, and support farmers with innovative solutions.",
+  description:
+    "AgriSense leverages technology to enhance agricultural efficiency, improve productivity, and support farmers with innovative solutions.",
+  metadataBase: new URL("https://agrisensetech.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "AgriSense - Revolutionizing Agriculture",
     description:
       "AgriSense leverages technology to enhance agricultural efficiency, improve productivity, and support farmers with innovative solutions.",
-    url: "https://yourdomain.com",
+    url: "https://agrisensetech.com",
     images: [
       {
         url: "/assets/logo.png",
@@ -31,6 +36,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
 
 export default function RootLayout({
   children,
