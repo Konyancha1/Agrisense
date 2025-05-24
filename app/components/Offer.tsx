@@ -10,10 +10,10 @@ import {
   CheckCircle
 } from "lucide-react";
 
-import complianceImage from "../../Assets/Images/Img.png";
-import complianceImage2 from "../../Assets/Images/Img2.png";
-import complianceImage3 from "../../Assets/Images/Smart.png";
-import complianceImage4 from "../../Assets/Images/Cash.png";
+import complianceImage from "../../assets/images/Img.png";
+import complianceImage2 from "../../assets/images/Img2.png";
+import complianceImage3 from "../../assets/images/Smart.png";
+import complianceImage4 from "../../assets/images/Cash.png";
 
 const WhatWeOfferSection: FC = () => {
   const [activeTab, setActiveTab] = useState(0);
