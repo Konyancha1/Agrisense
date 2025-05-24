@@ -97,10 +97,10 @@ const Footer: React.FC = () => {
           &copy; {new Date().getFullYear()} AgriSense Technology Limited. All rights reserved.
         </p>
         <div className="mt-4 lg:mt-0 flex flex-col md:flex-row justify-center md:space-x-6">
-          <Link href="#" className="hover:text-[#519E65] text-base md:text-lg">
+          <Link href="/terms" className="hover:text-[#519E65] text-base md:text-lg">
             Terms & Conditions
           </Link>
-          <Link href="#" className="hover:text-[#519E65] text-base md:text-lg">
+          <Link href="/privacy-policy" className="hover:text-[#519E65] text-base md:text-lg">
             Privacy Policy
           </Link>
         </div>

@@ -6,16 +6,16 @@ import { FC } from 'react';
 import Image from 'next/image';
 
 // Import all partner logos
-import startupLogo from '../../Assets/Images/Startup.png';
-import tinyLogo from '../../Assets/Images/Tiny.png';
-import siliconLogo from '../../Assets/Images/Silicon.png';
-import jerikaLogo from '../../Assets/Images/Jerika.png';
-import gmacLogo from '../../Assets/Images/GMAC.png';
-import darkLogo from '../../Assets/Images/Dark.png';
-import cbsLogo from '../../Assets/Images/CBS.png';
-import ahvinchaLogo from '../../Assets/Images/Ahvincha.png';
-import microsoftLogo from '../../Assets/Images/microsoft-logo.png';
-import karmiLogo from '../../Assets/Images/karmi-logo.png';
+import startupLogo from '../../assets/images/Startup.png';
+import tinyLogo from '../../assets/images/Tiny.png';
+import siliconLogo from '../../assets/images/Silicon.png';
+import jerikaLogo from '../../assets/images/Jerika.png';
+import gmacLogo from '../../assets/images/GMAC.png';
+import darkLogo from '../../assets/images/Dark.png';
+import cbsLogo from '../../assets/images/CBS.png';
+import ahvinchaLogo from '../../assets/images/Ahvincha.png';
+import microsoftLogo from '../../assets/images/microsoft-logo.png';
+import karmiLogo from '../../assets/images/karmi-logo.png';
 
 const PartnersSection: FC = () => {
   const partners = [

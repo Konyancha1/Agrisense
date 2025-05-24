@@ -7,8 +7,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import Wazitrack from '../../Assets/Images/Img2.png';
-import Comply from '../../Assets/Images/Img.png';
+import Wazitrack from '../../assets/images/Img2.png';
+import Comply from '../../assets/images/Img.png';
 
 const PlatformSection: FC = () => {
   const handleScroll = (sectionId: string) => {
