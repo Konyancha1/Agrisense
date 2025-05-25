@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "AgriSense leverages technology to enhance agricultural efficiency, improve productivity, and support farmers with innovative solutions.",
   metadataBase: new URL("https://agrisensetech.com"),
   alternates: {
-    canonical: "/",
+    canonical: "https://agrisensetech.com/",
   },
   openGraph: {
     title: "AgriSense - Revolutionizing Agriculture",
