@@ -9,7 +9,7 @@ const ContactUsSection: React.FC = () => {
             Ready to transform how you grow, certify, and finance agriculture?
           </h2>
           <p className="text-gray-600 mt-2">
-            Let us know what you're interested in and we’ll get in touch.
+            Let us know what you're interested in and we&apos;ll get in touch.
           </p>
         </div>
 
